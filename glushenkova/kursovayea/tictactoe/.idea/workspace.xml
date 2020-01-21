@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d05c710-a299-4f6c-a5fa-d7b1fdd31e12" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/TicTacToe_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/ProfileWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/Server$AcceptThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/controller/ProfileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/controller/ProfileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicTacToe/model/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicTacToe/model/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/BoardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Server.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="JavaFXApplication" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Alina Glushenkova &lt;aln.g99@mail.ru&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1VGEpQFxoqU0iMnEEgXQrAwTbNi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alng\Desktop\tictactoe\src\view" />
+      <recent name="C:\Users\alng\Desktop\tictactoe\src" />
+      <recent name="C:\Users\alng\Desktop\tictactoe" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alng\Desktop\tictactoe\src" />
+      <recent name="C:\Users\alng\Desktop\tictactoe\src\view" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Player">
+    <configuration name="Player" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model.Player" />
+      <module name="TicTacToe" />
+      <option name="PROGRAM_PARAMETERS" value="209" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Profile" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.Profile" />
+      <module name="TicTacToe" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model.Server" />
+      <module name="TicTacToe" />
+      <option name="PROGRAM_PARAMETERS" value="209" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="view.Profile" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.Player" />
+      <item itemvalue="Application.Profile" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d05c710-a299-4f6c-a5fa-d7b1fdd31e12" name="Default Changelist" comment="" />
+      <created>1576871213108</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576871213108</updated>
+    </task>
+    <task id="LOCAL-00001" summary="7.42 22.12">
+      <created>1577033015206</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577033015206</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1.44 24.12">
+      <created>1577141074606</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577141074606</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2.31 24.12&#10;doesnt work, waiting somethins????">
+      <created>1577143927358</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577143927358</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2.31 24.12&#10;create 2 boards for two players (one for one)">
+      <created>1577144497585</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577144497585</updated>
+    </task>
+    <task id="LOCAL-00005" summary="3:58 24.12&#10;create 2 boards for two players (one for one) + move&#10;but move draws for one player">
+      <created>1577149168126</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577149168126</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="7.42 22.12" />
+    <MESSAGE value="1.44 24.12" />
+    <MESSAGE value="2.31 24.12&#10;doesnt work, waiting somethins????" />
+    <MESSAGE value="2.31 24.12&#10;create 2 boards for two players (one for one)" />
+    <MESSAGE value="3:58 24.12&#10;create 2 boards for two players (one for one) + move&#10;but move draws for one player" />
+    <option name="LAST_COMMIT_MESSAGE" value="3:58 24.12&#10;create 2 boards for two players (one for one) + move&#10;but move draws for one player" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TicTacToe$Server.ic" NAME="Server Coverage Results" MODIFIED="1577143322546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TicTacToe$Player.ic" NAME="Player Coverage Results" MODIFIED="1577143310579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

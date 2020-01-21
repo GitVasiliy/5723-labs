@@ -1,0 +1,5 @@
+cd C:\Users\alng\Desktop\java\source\a
+java -jar target/Server.jar
+
+cd C:\Users\alng\Desktop\java\source\b
+java -jar target/Player.jar
