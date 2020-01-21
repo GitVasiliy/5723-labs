@@ -1,0 +1,7 @@
+admin&admin#readAndMod&Napomosh#readAndMod&Nap#readAndMod&Rasp#readAndMod&Dasg#readAndMod&Asd#readAndMod&Dghg#readAndMod
+Napomosh&Napomosh#readAndMod&admin#onlyRead
+Nap&Nap#readAndMod
+Rasp&Rasp#readAndMod
+Dasg&Dasg#readAndMod
+Asd&Asd#readAndMod
+Dghg&Dghg#readAndMod
