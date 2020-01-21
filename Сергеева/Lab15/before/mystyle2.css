@@ -1,0 +1,29 @@
+a {
+  color: #0190FE;
+  font-family: Trattatello, fantasy;
+  padding: 7px; 
+  border: 1px solid #666; 
+  background: #E5CDC2;
+}
+b {
+  color: #FEFEFE;
+  font-family: URW Chancery L, cursive;
+  font-size: 150%;
+  padding: 7px; 
+  border: 1px solid #333; 
+  background: #FBC7FD;
+}
+body{
+  background-color: #E9FDC7; 
+}
+e {
+  font-family: Luminari, fantasy;
+  padding: 7px; 
+  border: 1px solid #666; 
+  background: #B1B4F9;
+}
+d {
+  color: #010000;
+  font-family: URW Chancery L, cursive;
+  font-size: 150%;
+}

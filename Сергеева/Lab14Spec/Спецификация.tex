@@ -1,0 +1,166 @@
+\documentclass[a4paper,14pt]{extarticle} %размер бумаги устанавливаем А4, шрифт 14пунктов
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}%включаем свою кодировку: koi8-r или utf8 в UNIX, cp1251 в Windows
+\usepackage[english,russian]{babel}%используем русский и английский языки с переносами
+\usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float} %подключаем нужные пакеты расширений
+
+\usepackage{alltt}
+\usepackage{fancyvrb}
+%шрифт Times New Roman
+%\usepackage{fontspec}
+%\setmainfont{Times New Roman}
+%\setallmainfonts{Times New Roman}
+
+\usepackage{titlesec}
+
+\makeatletter
+\renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
+\makeatother
+
+\usepackage{geometry} % Меняем поля страницы
+\geometry{left=3cm}% левое поле
+\geometry{right=15mm}% правое поле
+\geometry{top=2cm}% верхнее поле
+\geometry{bottom=2cm}% нижнее поле
+\linespread{1.5}
+
+\usepackage{indentfirst} % отделять первую строку раздела абзацным отступом
+\setlength\parindent{5ex}
+\usepackage{tikz}
+\usepackage{pgfplots}
+%links
+\usepackage{url}
+
+\usepackage[tableposition=top,singlelinecheck=false, justification=centering]{caption}
+\usepackage{subcaption}
+
+% маркированные списки
+\renewcommand{\labelitemi}{--}
+\renewcommand{\labelitemii}{--}
+% нумерованные списки
+\renewcommand{\labelenumi}{\asbuk{enumi})}
+\renewcommand{\labelenumii}{\arabic{enumii})}
+
+% номер сноски со скобкой
+\renewcommand*{\thefootnote}{\arabic{footnote})}
+\renewcommand{\footnoterule}{%
+\kern -3pt
+\hrule width 40mm height .4pt
+\kern 2.6pt
+}
+
+%иллюстрации и таблицы
+\DeclareCaptionLabelFormat{gostfigure}{Рисунок #2}
+\DeclareCaptionLabelFormat{gosttable}{Таблица #2}
+\DeclareCaptionLabelSeparator{gost}{~---~}
+\captionsetup{labelsep=gost}
+\captionsetup*[figure]{labelformat=gostfigure}
+\captionsetup*[table]{labelformat=gosttable}
+\renewcommand{\thesubfigure}{\asbuk{subfigure}}
+
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+%\renewcommand{\cfttoctitlefont}{\Large\filcenter}
+%\setcounter{page}{3} %нумерация страниц с 3
+
+\usepackage{listings}
+\lstset{
+frame=single,
+breaklines=true
+}
+\author{Сергеева П. Н.}
+\title{Морской бой}
+\begin{document}
+\begin{titlepage}
+\begin{center}
+
+ГУАП\\
+КАФЕДРА № 51\\
+\vspace{2cm}
+
+\begin{flushleft}
+ПРЕПОДАВАТЕЛЬ
+\begin{tabular}{|l|l|l|}
+\hline
+доц., канд. техн. наук & & Е.М. Линский\\
+\hline
+должность, уч. степень, звание & подпись, дата & инициалы, фамилия\\
+\hline
+\end{tabular}
+\end{flushleft}
+
+\vspace{3cm}
+
+{\Large СПЕЦИФИКАЦИЯ\\}
+\vspace{0.3cm}
+{\Large СЕТЕВАЯ ИГРА МОРСКОЙ БОЙ}
+
+\vspace{0.7cm}
+
+\begin{flushleft}
+по курсу: ТЕХНОЛОГИИ ПРОГРАММИРОВАНИЯ
+\end{flushleft}
+
+\vspace{5cm}
+
+\begin{flushleft}
+РАБОТУ ВЫПОЛНИЛА
+\begin{tabular}{|l|l|l|}
+\hline
+СТУДЕНТКА ГР. № 5723 & & Сергеева П. Н.\\
+\hline
+& подпись, дата & инициалы, фамилия\\
+\hline
+\end{tabular}
+\end{flushleft}
+
+\vspace{2cm}
+
+Санкт-Петербург 2019
+
+\end{center}
+\end{titlepage}
+\renewcommand{\chaptername}{Раздел}
+\renewcommand{\figurename}{Рисунок}
+
+\begin{center}
+\huge \bf Морской бой
+\end{center}
+
+\setcounter{page}{2}
+\section*{Описание игры}
+Данная программа будет реализовывать игру в морской бой c графическим интерфейсом. Размер доски будет 10 клеток на 10 клеток, котрые будут пронумерованы буквами от A до J по горизонтали и от 0 до 9 по вертикали. У игрока будут две доски: доска с его собственными кораблями и доска, в которой он будет стрелять по кораблям соперника. У клеток первой доски будет 2 состояния:
+\begin{itemize}
+\item{Клетка свободна.}
+\item{Клетка занята кораблём.}
+\end{itemize}
+У клеток второй доски будет 3 состояния:
+\begin{itemize}
+\item{Выстрел в клетку не совершён.}
+\item{Выстрел в клетку совершён, но она оказалась пустой.}
+\item{Выстрел в клетку совершён, в ней оказался корабль или его часть.}
+\end{itemize}
+Условия победы одного из игроков состоит в том, чтобы
+убить все корабли соперника. Пользователи ходят по очереди. Игрок, который будет ходить первым выбирается случайно. Если игрок во время своего хода попал по кораблю соперника, то следующим ходит он же. Если не попал, то ход переходит ко второму игроку.
+
+\newpage
+\section*{Возможности}
+\begin{itemize}
+\item{Регистрация нового игрока.}
+\item{Игрок может создать новую доску и ожидать подключение соперника.}
+\item{Присоединиться к готовой доске, если на ней только один игрок.}
+\item{Поддержание нескольких досок на сервере.}
+\end{itemize}
+
+\newpage
+\section*{Инструкция пользователя}
+При запуске программы, пользователю необходимо подключится к серверу, после чего игрок может:
+\begin{itemize}
+\item{Начать игру.}
+\item{Присоединиться к игре.}
+
+\end{itemize}
+В начале игры игроку требуется расставить свои корабли на поле: 1 корабль на 4 клетки, 2 корабля на 3 клетки, 3 корабля на 2 клетки, 4 корабля на 1 клетку. Расставить их нужно таким образом, чтобы между кораблями было расстояние хотя бы в 1 клетку (программа будет проверять это и при попытке неправильно поставить корабль заставит пользователя его переставить). После расстановки кораблей пользователь должен будет подтвердить свою готовность начать игру, и после того, как это сделают оба игрока, игра начнётся. Время на расстановку кораблей будет ограничено, по истечении которой корабли будут расставлены автоматически. После завершения партии пользователи переносяться в главное меню, где они могут снова выбрать доступные ему действия.
+
+\newpage
+\end{document}
