@@ -21,8 +21,7 @@ public class WorkWithUsers {
         BufferedReader reader;
 
         try {
-            reader = new BufferedReader(new FileReader
-                    (WorkWithDirectory.dbPath + "\\users.txt"));
+            reader = new BufferedReader(new FileReader(WorkWithDirectory.dbPath + "\\users.txt"));
 
             String login;
             while ((login = reader.readLine()) != null) {

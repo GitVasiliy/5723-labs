@@ -41,11 +41,6 @@ public class WorkWithDirectoryTest {
         Assertions.assertTrue(actual.equals(expected));
     }
 
-//    @Test
-//    public void testAddDirectoryToUser{
-//
-//    }
-
     @Test
     public void testHasUserThisDirectory(){
         //user = Rasp, dir = Rasp, expected = true
@@ -74,21 +69,6 @@ public class WorkWithDirectoryTest {
         Assertions.assertTrue(actual.equals(expected));
     }
 
-//    @Test
-//    public void testDoDelete(){
-//
-//    }
-
-//    @Test
-//    public void testUploadFile(){
-//
-//    }
-
-//    @Test
-//    public void testDownloadFile(){
-//
-//    }
-
     @Test
     public void testPrepareDownloadFileWithLink(){
         String[] expected = new String[2];
@@ -105,14 +85,4 @@ public class WorkWithDirectoryTest {
 
         Assertions.assertEquals(WorkWithDirectory.hasUserThisFile("dft.m", "Rasp"), expected);
     }
-
-//    @Test
-//    public void testGenerateLinkKey(){
-//
-//    }
-
-//    @Test
-//    public void testGetAllLinks(){
-//
-//    }
 }

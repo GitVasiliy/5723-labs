@@ -7,3 +7,4 @@ http://192.168.43.173:8080/download?link=aOugTUlG5TAlomQL1M4I44prGBNOamDq1AqaFuY
 http://192.168.43.173:8080/download?link=bw_GVfaFApXwNdh9AXJtlnfyXqKOEmfgV_W_2MESExaf3hBvduPjSsKBJ0GN&admin&emp3.m&Napomosh
 http://192.168.43.173:8080/download?link=J3LQE8xXSySCHhIgRirWV6ClFIgvEYOpYdblKrH7jBMTiJvaGcCfAIp&Napomosh&bf.C&admin
 http://192.168.43.173:8080/download?link=3r1NqRbA4yhOf1NokUbmTLH3ry9vebpljHDZFMkNavWeYXm7BG1k5IAtK7xqelciZAj&Rasp&emp3.m&admin
+http://192.168.43.173:8080/download?link=4p3BRDcYkl3xPY_qnIMYVTN2QCQRKqSSJkrEZgJAgC8OKDg06cPUFlJgHG&asiliy_sergeevich_pro_github_tawer_2288888888888888888888889&ERU - Scripts.bsa&asiliy_sergeevich_pro_github_tawer_2288888888888888888888889
