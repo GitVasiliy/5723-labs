@@ -1,0 +1,127 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{cmap}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\begin {document}
+\thispagestyle{empty}
+\begin{center}
+ГУАП
+
+КАФЕДРА №52
+\end{center}
+
+\vspace{30mm}
+ПРЕПОДАВАТЕЛЬ
+
+\begin{tabular}{ |c|c|c| }
+\hline
+доц., к. т. н. & & Е.М. Линский \\\hline
+должность, уч. ст., звание & дата, подпись & инициалы, фамилия \\\hline
+\end{tabular}
+
+\vspace{30mm}
+\begin{center}
+СПЕЦИФИКАЦИЯ
+
+ПЕРЕСЫЛКА ФАЙЛОВ НА ДРУГОЙ КОМПЬЮТЕР
+\end{center}
+
+\vspace{10mm}
+по курсу: ТЕХНОЛОГИИ ПРОГРАММИРОВАНИЯ
+
+\vspace{50mm}
+\hspace{8mm}РАБОТУ ВЫПОЛНИЛ
+\begin{center}
+\begin{tabular}{ |c|c|c| }
+\hline
+Студент гр. 5723 & & Л.А.Кормилицына \\\hline
+& дата, подпись & инициалы, фамилия \\
+\hline
+\end{tabular}
+\vspace{15mm}
+
+Санкт-Петербург 2019
+\end{center}
+
+\newpage
+\begin{center}
+\Large{\bf Пересылка файла на другой компьютер }
+\end{center}
+\setcounter{page}{2}
+
+\section*{Возможности программы}
+\begin{itemize}
+\item Передача текстовых сообщений между сервером и клиентом;
+\item Клиент получает имя файла при старте и посылает файл клиенту:
+Передача файлов по TCP между сервером и клиентом, где сервер сохраняет полученный файл в заданный каталог с указанием нового имени файла и расширения;
+\item Cмена и установка имен клиента и сервера при обращении друг к
+другу;
+
+\end{itemize}
+\newpage
+
+\section*{Описание работы программы}
+
+Данная программа будет реализовывать создание сервера и  устанавливать соединение сервер-клиент, получая на запуске   свободный порт и адресс машины в виде аргументов, на которой расположен сервер . После соединения (если оно прошло успешно) программа выводит меню с коммандами на экран:
+\begin{itemize}
+\item Commands list: @help
+\item Set users name: @name Luba
+\item Send text message: Hello, world !
+\item Send file: @send filename
+\item Cancel command: @cancel
+\item Quit program: @quit
+\end{itemize}
+После ввода комманды " @send имя-файла расширение-файла " на экране принимающей файл стороны появляется сообщение:
+\begin{itemize}
+\item Enter the directory to save:
+\end{itemize}
+Вводим директорию для сохранения файла с указанием имени файла и
+расширения. Далее на сервере и клиенте отображается процесс пересылки
+файла и сообщение о успешной пересылке файла. Во время передачи файлов будет отображаться строка загрузки/передачи файла
+(ProgressBar)
+
+ [\#\#\#.......]
+ 
+ Где символ "\#" будет процент загруженного файла, а "." будет показывать процент еще не загруженного файла. ProgressBar будет отображать текущий прогресс отпраки/загрузки и будет динамически обновляться в соответствии с количеством переданных байт/к общему размеру файла.
+
+\begin{itemize}
+\item Begin receiving file
+\item End receiving file.
+\item Complete.
+\end{itemize}
+
+\newpage
+\begin{center}
+\Large{\bf Пример работы программы }
+\end{center}
+
+\Large{\bf Со стороны сервера }
+\\System:
+\\Commands list: @help
+\\Set users name: @name Luba
+\\Send text message: Hello, world !
+\\Send file: @send filename
+\\Cancel command: @cancel
+\\Quit program: @quit
+\\SYSTEM: /127.0.0.1 connected.
+\\@send message.txt
+\\
+\\[\#\#\#\#\#.......]
+
+\Large{\bf Со стороны клиента }
+\\System:
+\\Commands list: @help
+\\Set users name: @name Luba
+\\Send text message: Hello, world !
+\\Send file: @send filename
+\\Cancel command: @cancel
+\\Quit program: @quit
+\\SYSTEM: Enter the directory to save:
+\\D:\textmessage.txt
+\\SYSTEM: Begin receiving file.
+\\
+\\[\#\#\#\#\#.......]
+\\SYSTEM: End receiving file.
+\\SYSTEM: Complete.
+
+\end{document}
