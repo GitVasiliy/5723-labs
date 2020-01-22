@@ -1,0 +1,28 @@
+a {
+  color: #EF27E8;
+  font-family: Times New Roman, Verdana, sans-serif;
+  padding: 7px; 
+  border: 1px solid #666; 
+  background: #fc0;
+}
+b {
+  color: #2CFE0C;
+  font-family: Times New Roman, Verdana, sans-serif;
+  padding: 7px; 
+  border: 1px solid #333; 
+  background: maroon;
+}
+body{
+  background-color: #F4D2D2; 
+}
+e {
+  font-family: Times New Roman, Verdana, sans-serif;
+  padding: 7px; 
+  border: 1px solid #666; 
+  background: #898888;
+}
+d {
+  color: #010000;
+  font-family: URW Chancery L, cursive;
+  font-size: 150%;
+}
