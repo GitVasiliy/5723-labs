@@ -1,4 +1,0 @@
-*Animals
-    *Cat
-*Birds
-    *Parrot
