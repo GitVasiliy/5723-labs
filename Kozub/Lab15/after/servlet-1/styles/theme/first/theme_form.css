@@ -1,0 +1,81 @@
+* {
+
+	font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+
+
+
+
+
+body {
+
+	background-color: rgb(236, 236, 236);
+
+}
+
+
+
+
+
+div.label {
+
+	font-size: 12pt;
+
+}
+
+
+
+
+
+input[type='text'], input[type='password'] {
+
+	font-size: 12pt;
+
+}
+
+
+
+
+
+textarea.textarea-new-ad, textarea.textarea-new-answer, input[type='text'], input[type='password'] {
+
+	border: 2px solid rgb(213, 221, 223);
+
+	border-radius: 3px;
+
+}
+
+
+
+
+
+input[type='submit'] {
+
+	background-color: rgb(40, 116, 166);
+
+	color: rgb(236, 236, 236);
+
+	border: 2px solid rgb(247, 247, 247);
+
+	border-radius: 3px;
+
+
+
+	font-size: 12pt;
+
+
+
+	transition: .4s ease-out;
+
+}
+
+
+
+
+
+input[type='submit']:hover {
+
+	background-color: rgb(26, 82, 118);
+
+}

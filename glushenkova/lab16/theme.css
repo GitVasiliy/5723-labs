@@ -1,0 +1,54 @@
+* 
+{
+	margin: 0px;
+	font: 12pt Andale Mono, monospace;
+}
+
+div.LIST
+{
+	margin: 0px;
+	border-style: groove;
+	border-color: rgb(210, 105, 30);
+	border-width: 5px;
+	width: 500px;
+	padding: 10px;
+	background-color: rgb(240, 230, 140);
+    
+}
+div.header
+{
+	color: rgb(255, 69, 0);
+}
+a.show
+{
+	color: rgb(184, 134, 11);
+	font-weight: 900;
+}
+ul.showDropList
+{
+	color: rgb(178, 34, 34);
+	margin-left: 0px;
+
+}
+div.delete
+{
+	clear: both; 
+	text-align: left;
+	margin: 0px;
+	border-style: groove;
+	border-color: rgb(58, 18, 30);
+	border-width: 5px;
+	width: 500px;
+	padding: 10px;
+	background-color: rgb(242, 40, 40);
+}
+input[value = delete] 
+{
+    margin: 10px;
+    padding: 10px;
+}
+
+body 
+{
+	background-color: rgb(30, 144, 255);
+}

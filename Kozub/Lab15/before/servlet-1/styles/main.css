@@ -1,0 +1,170 @@
+* {
+
+	margin: 0px;
+
+	padding: 0px;
+
+}
+
+
+
+
+
+div.header {
+
+	position: fixed;
+
+	top: 0px;
+
+	width: 100%;
+
+}
+
+
+
+
+
+div.header-name {
+
+	float: left;
+	margin: 10px;
+
+}
+
+
+
+
+
+div.header-menu {
+	float: right;
+}
+
+
+
+
+
+a.menu-button, a.answer-button {
+
+	display: block;
+
+	text-decoration: none;
+
+	text-transform: uppercase;
+
+
+
+	margin: 10px;
+
+	padding: 5px 10px;
+
+}
+
+
+
+
+
+a.menu-button {
+
+	float: left;
+
+}
+
+
+
+
+
+div.board {
+
+	width: 90%;
+
+	margin: 100px auto 50px;
+
+
+
+	word-wrap: break-word;
+
+}
+
+
+
+
+
+div.board-ad {
+
+	margin-bottom: 25px;
+
+	padding: 10px 0px;
+
+}
+
+
+
+
+
+div.board-ad-header {
+
+	margin: 10px;
+
+}
+
+
+
+
+
+div.board-ad-header-name {
+
+	text-transform: uppercase;
+
+}
+
+
+
+
+
+div.board-ad-header-info {
+
+	margin: 0px 0px 5px 10px;
+
+}
+
+
+	
+
+
+div.board-ad-content {
+
+	padding-bottom: 10px;
+
+	margin: 10px;
+
+}
+
+
+div.board-ad-answer-button {
+
+	display: flex;
+
+	justify-content: center;
+
+}
+
+div.answer {
+
+	margin-top: 35px;
+	margin-left: 100px;
+}
+
+div.answer-info {
+
+	margin: 15px 10px 5px 40px;
+
+	padding-bottom: 5px;
+
+}
+
+
+div.answer-text {
+
+	margin: 10px 20px 10px 50px;
+
+}

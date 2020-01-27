@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+   version="2.5"> ">
+
+  <servlet>
+      <servlet-name>LoginServlet</servlet-name>
+      <servlet-class>LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ProfileServlet</servlet-name>
+    <servlet-class>ProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProfileServlet</servlet-name>
+    <url-pattern>/ProfileServlet/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>MainPage</servlet-name>
+    <servlet-class>MainPage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MainPage</servlet-name>
+    <url-pattern>/MainPage/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Advert</servlet-name>
+    <servlet-class>Advert</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Advert</servlet-name>
+    <url-pattern>/Advert/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Styles</servlet-name>
+    <servlet-class>Styles</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Styles</servlet-name>
+    <url-pattern>/Styles/*</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>

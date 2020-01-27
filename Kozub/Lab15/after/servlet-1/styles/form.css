@@ -1,0 +1,111 @@
+* {
+
+	margin: 0px;
+
+	padding: 0px;
+
+}
+
+form {
+
+	margin: 50px auto;
+
+}
+
+form.form-user {
+
+	max-width: 250px;
+
+}
+
+
+
+
+
+form.form-new-ad, form.form-new-answer {
+
+	max-width: 500px;
+
+}
+
+div.label {
+
+	margin-bottom: 5px;
+
+
+
+	text-transform: uppercase;
+
+}
+
+
+
+
+
+input[type='text'], input[type='password'] {
+
+	margin-bottom: 20px;
+
+	padding: 0px 7px;
+
+	height: 25px;
+
+}
+
+
+
+
+
+input.input-user {
+
+	width: 250px;
+
+}
+
+
+
+
+
+input.input-new-ad {
+
+	width: 500px;
+
+}
+
+
+
+
+
+textarea.textarea-new-ad, textarea.textarea-new-answer {
+
+	margin-bottom: 20px;
+
+	padding: 7px;
+
+	width: 500px;
+
+	height: 250px;
+
+
+	resize: none;
+}
+
+
+
+div.form-submit {
+
+	display: flex;
+
+	justify-content: center;
+
+}
+
+input[type='submit'] {
+
+	padding: 5px 10px;
+
+
+
+	text-transform: uppercase;
+
+}

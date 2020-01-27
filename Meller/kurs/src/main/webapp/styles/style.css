@@ -1,0 +1,51 @@
+.hide::before{
+    content:"+";
+}
+
+.show::before{
+    content:"-";
+}
+
+#bodyIndex{
+    background-color: white;
+}
+
+#loginFrame, #regFrame{
+    position: absolute;
+    left: 500px;
+    top: 150px;
+    width: 300px;
+    height: 350px;
+    background-color: white;
+}
+
+#loginForm, #regForm{
+    margin-top: 50px;
+}
+
+input[type="text"], input[type="password"]{
+    margin: 4px 4px 4px 40px;
+
+}
+#regButton{
+    margin-left: 40px;
+}
+
+#LogMessage, #RegMessage{
+    font-size: larger;
+    margin-left: 70px;
+}
+#mainFrame{
+    max-width: 50%;
+    float: left;
+}
+#searchFrame{
+    position: absolute;
+    left: 55%;
+    float: right;
+
+}
+
+ul, li{
+    list-style-type: none;
+}

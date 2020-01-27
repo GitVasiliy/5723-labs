@@ -1,0 +1,8 @@
+cd C:\javalab\lab12
+javac -sourcepath ./src -d bin src/dop/Client.java
+java -classpath ./bin chat.Client 1511
+
+
+cd C:\javalab\lab12
+javac -sourcepath ./src -d bin src/dop/Server.java
+java -classpath ./bin chat.Server 1511
