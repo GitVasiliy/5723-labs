@@ -1,0 +1,168 @@
+\documentclass[a4paper,14pt]{extarticle} %размер бумаги устанавливаем А4, шрифт 14пунктов 
+\usepackage[T2A]{fontenc} 
+\usepackage[utf8]{inputenc}%включаем свою кодировку: koi8-r или utf8 в UNIX, cp1251 в Windows 
+\usepackage[english,russian]{babel}%используем русский и английский языки с переносами 
+\usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float} %подключаем нужные пакеты расширений 
+\usepackage{graphicx} 
+\graphicspath{{images/}} 
+
+\usepackage[colorlinks=false,pdfborder={0 0 0}]{hyperref} %использование гиперссылок, colorlinks - цвет текста ссылки, pdfborder - окантовка. 
+
+\usepackage{alltt} 
+\usepackage{fancyvrb} 
+%шрифт Times New Roman 
+%\usepackage{fontspec} 
+%\setmainfont{Times New Roman} 
+%\setallmainfonts{Times New Roman} 
+
+\usepackage{titlesec} 
+
+\makeatletter 
+\renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку: 
+\makeatother 
+
+\usepackage{graphicx} 
+\graphicspath{{pictures/}}
+
+\usepackage{geometry} % Меняем поля страницы 
+\geometry{left=3cm}% левое поле 
+\geometry{right=15mm}% правое поле 
+\geometry{top=2cm}% верхнее поле 
+\geometry{bottom=2cm}% нижнее поле 
+\linespread{1.5} 
+
+\usepackage{indentfirst} % отделять первую строку раздела абзацным отступом 
+\setlength\parindent{5ex} 
+\usepackage{tikz} 
+\usepackage{pgfplots} 
+%links 
+\usepackage{url} 
+
+\usepackage[tableposition=top,singlelinecheck=false, justification=centering]{caption} 
+\usepackage{subcaption} 
+
+% маркированные списки 
+\renewcommand{\labelitemi}{--} 
+\renewcommand{\labelitemii}{--} 
+% нумерованные списки 
+\renewcommand{\labelenumi}{\asbuk{enumi})} 
+\renewcommand{\labelenumii}{\arabic{enumii})} 
+
+% номер сноски со скобкой 
+\renewcommand*{\thefootnote}{\arabic{footnote})} 
+\renewcommand{\footnoterule}{% 
+\kern -3pt 
+\hrule width 40mm height .4pt 
+\kern 2.6pt 
+} 
+
+%иллюстрации и таблицы 
+\DeclareCaptionLabelFormat{gostfigure}{Рисунок #2} 
+\DeclareCaptionLabelFormat{gosttable}{Таблица #2} 
+\DeclareCaptionLabelSeparator{gost}{~---~} 
+\captionsetup{labelsep=gost} 
+\captionsetup*[figure]{labelformat=gostfigure} 
+\captionsetup*[table]{labelformat=gosttable} 
+\renewcommand{\thesubfigure}{\asbuk{subfigure}} 
+
+\usepackage{tocloft} 
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} 
+%\renewcommand{\cfttoctitlefont}{\Large\filcenter} 
+%\setcounter{page}{3} %нумерация страниц с 3 
+\addto\captionsrussian{\renewcommand\contentsname{СОДЕРЖАНИЕ}} 
+\addto\captionsrussian{\renewcommand\refname{СПИСОК ИСПОЛЬЗОВАНЫХ ИСТОЧНИКОВ}} 
+
+\usepackage{listings} 
+\lstset{ 
+frame=single, 
+breaklines=true 
+} 
+\author{Д.С. Горячкин} 
+\title{Список дел(to-do list)} 
+\begin{document} 
+\begin{titlepage} 
+\begin{center} 
+
+ГУАП\\ 
+КАФЕДРА № 52\\ 
+\vspace{2cm} 
+
+\begin{flushleft} 
+ПРЕПОДАВАТЕЛЬ 
+\begin{tabular}{|l|l|l|} 
+\hline 
+доц., канд. техн. наук & & Е.М. Линский\\ 
+\hline 
+должность, уч. степень, звание & подпись, дата & инициалы, фамилия\\ 
+\hline 
+\end{tabular} 
+\end{flushleft} 
+
+\vspace{3cm} 
+
+{\Large СПЕЦИФИКАЦИЯ\\} 
+\vspace{0.3cm} 
+{\Large Список дел(to-do list)} 
+
+\vspace{0.7cm} 
+
+\begin{flushleft} 
+по курсу: ТЕХНОЛОГИИ ПРОГРАММИРОВАНИЯ 
+\end{flushleft} 
+
+\vspace{5cm} 
+
+\begin{flushleft} 
+РАБОТУ ВЫПОЛНИЛ 
+\begin{tabular}{|l|l|l|} 
+\hline 
+СТУДЕНТ ГР. № 5723 & & Д.С. Горячкин\\ 
+\hline 
+& подпись, дата & инициалы, фамилия\\ 
+\hline 
+\end{tabular} 
+\end{flushleft} 
+
+\vspace{2cm} 
+
+Санкт-Петербург 2019
+
+\end{center} 
+\end{titlepage} 
+\renewcommand{\chaptername}{Раздел} 
+\renewcommand{\figurename}{Рисунок} 
+
+\begin{center} 
+\huge \bf Список дел
+\end{center} 
+\setcounter{page}{2} 
+\section * {Возможности} 
+\begin{itemize} 
+\item{Поддерживается регистрация и вход для каждого пользователя}
+\item{Главная страница:} 
+\begin{itemize} 
+\item{Создание списка дел}
+\item{Редактирование списка}
+\item{Sign out}
+\end{itemize} 
+\item{Создание списка:} 
+\begin{itemize} 
+\item{Пользователю будет предложена форма, в которой можно написать дело которое нужно выполнить}
+\item{Каждое новое дело будет появляться под предыдущим}
+\end{itemize}
+\item{Редактирование списка:}
+\begin{itemize}
+\item{Можно отметить дело как выполненое}
+\item{Каждое дело можно удалить из списка}
+\item{Есть кнопка удаления для дел помеченных как выполненые}
+\end{itemize}
+\item{Права пользователя:}
+\begin{itemize}
+\item{У пользователя есть возможность добавления дел в список, удаление дел из списка, просмотр профиля, выход из профиля}
+\end{itemize}
+\item{Профиль:}
+\begin{itemize}
+\item{У всех пользователей показывается их список дел}
+\end{itemize}
+\end{itemize}
+\end{document}
