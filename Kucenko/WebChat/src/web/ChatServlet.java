@@ -48,7 +48,7 @@ public class ChatServlet extends HttpServlet {
 		
 		pw.println("<form action='webChat' method='post'>");
 		pw.println("<table class = 'txt'><tr><td>Name:</td><td>");
-		pw.println("<input type='text' name='username' placeholder='Enter name' value = '" + session.getAttribute("username") + "'/>");
+		pw.println("<input type='text' name='username' value = '" + session.getAttribute("username") + "'/>");
 		pw.println("</td></tr><tr> <td>Message:</td> <td>");
 		pw.println("<textarea class='inputtext' name='message' placeholder='input your message..'></textarea>");
 		pw.println("</td> </tr><td ><input type='submit' value='Enter' class='button'/></td></form>");
