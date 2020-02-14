@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+body{
+	font-size: 18pt;
+	font-family: Tahoma, Verdana, Arial;
+	background-image: url(background.png);
+}
