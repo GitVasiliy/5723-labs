@@ -1,0 +1,164 @@
+\documentclass[a4paper,14pt]{extarticle} %размер бумаги устанавливаем А4, шрифт 14пунктов
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}%включаем свою кодировку: koi8-r или utf8 в UNIX, cp1251 в Windows
+\usepackage[english,russian]{babel}%используем русский и английский языки с переносами
+\usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float} %подключаем нужные пакеты расширений
+\usepackage{graphicx} %хотим вставлять в диплом рисунки?
+\graphicspath{{images/}}%путь к рисункам
+
+\usepackage[colorlinks=false,pdfborder={0 0 0}]{hyperref} %использование гиперссылок, colorlinks - цвет текста ссылки, pdfborder - окантовка.
+
+\usepackage{alltt}
+\usepackage{fancyvrb}
+%шрифт Times New Roman
+%\usepackage{fontspec}
+%\setmainfont{Times New Roman}
+%\setallmainfonts{Times New Roman}
+
+\usepackage{titlesec}
+
+\makeatletter
+\renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
+\makeatother
+
+\usepackage{graphicx}
+\graphicspath{{pictures/}}
+
+\usepackage{geometry} % Меняем поля страницы
+\geometry{left=3cm}% левое поле
+\geometry{right=15mm}% правое поле
+\geometry{top=2cm}% верхнее поле
+\geometry{bottom=2cm}% нижнее поле
+\linespread{1.5}
+
+\usepackage{indentfirst} % отделять первую строку раздела абзацным отступом
+\setlength\parindent{5ex}
+\usepackage{tikz}
+\usepackage{pgfplots}
+%links
+\usepackage{url}
+
+\usepackage[tableposition=top,singlelinecheck=false, justification=centering]{caption}
+\usepackage{subcaption}
+
+% маркированные списки
+\renewcommand{\labelitemi}{--}
+\renewcommand{\labelitemii}{--}
+% нумерованные списки
+\renewcommand{\labelenumi}{\asbuk{enumi})}
+\renewcommand{\labelenumii}{\arabic{enumii})}
+
+% номер сноски со скобкой
+\renewcommand*{\thefootnote}{\arabic{footnote})}
+\renewcommand{\footnoterule}{%
+\kern -3pt
+\hrule width 40mm height .4pt
+\kern 2.6pt
+}
+
+%иллюстрации и таблицы
+\DeclareCaptionLabelFormat{gostfigure}{Рисунок #2}
+\DeclareCaptionLabelFormat{gosttable}{Таблица #2}
+\DeclareCaptionLabelSeparator{gost}{~---~}
+\captionsetup{labelsep=gost}
+\captionsetup*[figure]{labelformat=gostfigure}
+\captionsetup*[table]{labelformat=gosttable}
+\renewcommand{\thesubfigure}{\asbuk{subfigure}}
+
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+%\renewcommand{\cfttoctitlefont}{\Large\filcenter}
+%\setcounter{page}{3} %нумерация страниц с 3
+\addto\captionsrussian{\renewcommand\contentsname{СОДЕРЖАНИЕ}}
+\addto\captionsrussian{\renewcommand\refname{СПИСОК ИСПОЛЬЗОВАНЫХ ИСТОЧНИКОВ}}
+
+\usepackage{listings}
+\lstset{
+frame=single,
+breaklines=true
+}
+\author{Ф. А. Щербаченко}
+\title{Список файлов}
+\begin{document}
+\begin{titlepage}
+\begin{center}
+
+ГУАП\\
+КАФЕДРА № 52\\
+\vspace{2cm}
+
+\begin{flushleft}
+ПРЕПОДАВАТЕЛЬ
+\begin{tabular}{|l|l|l|}
+\hline
+доц., канд. техн. наук & & Е.М. Линский\\
+\hline
+должность, уч. степень, звание & подпись, дата & инициалы, фамилия\\
+\hline
+\end{tabular}
+\end{flushleft}
+
+\vspace{3cm}
+
+{\Large СПЕЦИФИКАЦИЯ\\}
+\vspace{0.3cm}
+{\Large Список файлов на сервере.}
+
+\vspace{0.7cm}
+
+\begin{flushleft}
+по курсу: ТЕХНОЛОГИИ ПРОГРАММИРОВАНИЯ
+\end{flushleft}
+
+\vspace{5cm}
+
+\begin{flushleft}
+РАБОТУ ВЫПОЛНИЛ
+\begin{tabular}{|l|l|l|}
+\hline
+СТУДЕНТ ГР. № 5723 & & Ф. А. Щербаченко\\
+\hline
+& подпись, дата & инициалы, фамилия\\
+\hline
+\end{tabular}
+\end{flushleft}
+
+\vspace{2cm}
+
+Санкт-Петербург 2019
+
+\end{center}
+\end{titlepage}
+\renewcommand{\chaptername}{Раздел}
+\renewcommand{\figurename}{Рисунок}
+
+\begin{center}
+\huge \bf Список файлов на сервере
+\end{center}
+
+\setcounter{page}{2}
+\section*{Возможности}
+Программа просмотра списка файлов позволит пользователю просмотреть каталог из файлов, хранящихся в папке на сервере:
+
+\item{Возможности пользователя:}
+\begin{itemize}
+\item{Просмотр файлов}
+\item{Сортировка файлов по размеру, названию}
+\item{Динамическое изменение каталога, при добавлении файла в папку, имя файла появиться в каталоге без обновления страницы}
+
+\end{itemize}
+
+
+\section*{Макет приложения}
+
+При запуске приложения пользователь будет наблюдать непсредственно каталог и кнопки сортировки, при нажатии кнопки, файлы будут отсортированы по желанию пользователя
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\linewidth]{eee.jpg}
+\caption{\bf Главная страница.}
+\end{figure}
+
+
+\newpage
+\end{document}
