@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" charset="utf-8">
+		<title>Server Files</title>
+		<style type="text/css">
+			a{
+				color: #0000CD;
+				cursor: pointer;
+			}
+		</style>
+		<script src="http://code.jquery.com/jquery-2.2.4.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			function start(){
+				$.ajax({
+					url: "http://localhost:8080/kurs/SortSize",
+					type: "Get",
+					success: function(data) {
+						$("div").html(data);
+					}
+				});
+			};
+			setInterval(start, 5000);
+		</script>
+	</meta>
+	</head>
+<body background="im.jpg" onload="start()">
+	<div>
+		<p style="font-size: 15px"> Sort:<a href="List1.html"> By size</a> | <a href="List2.html">By name</a></p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE web-app PUBLIC '-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN' 'http://java.sun.com/dtd/web-app_2_3.dtd'>
+
+<web-app>
+
+	<servlet>
+		<servlet-name>GetList</servlet-name>
+		<servlet-class>GetList</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GetList</servlet-name>
+		<url-pattern>/GetList</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Start</servlet-name>
+		<servlet-class>Start</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Start</servlet-name>
+		<url-pattern>/Start</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SortSize</servlet-name>
+		<servlet-class>SortSize</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SortSize</servlet-name>
+		<url-pattern>/SortSize</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SortName</servlet-name>
+		<servlet-class>SortName</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SortName</servlet-name>
+		<url-pattern>/SortName</url-pattern>
+	</servlet-mapping>
+
+</web-app>
