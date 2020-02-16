@@ -29,7 +29,14 @@ public class Message {
 	}
 
 	public String getMessage() {
-		return message;
+		if (message.contains("\\<.*?>") == true) {
+			
+			return message;
+		}
+		else {
+		return message
+			.replaceAll("\\<.*?>","");
+		}
 	}
 
 	public void setMessage(String message) {

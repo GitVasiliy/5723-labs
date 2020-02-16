@@ -48,7 +48,7 @@ public class ChatServlet extends HttpServlet {
 		
 		pw.println("<form action='webChat' method='post'>");
 		pw.println("<table class = 'txt'><tr><td>Name:</td><td>");
-		pw.println("<input type='text' name='username' value = '" + session.getAttribute("username") + "'/>");
+		pw.println("<input type='text' required pattern='^[A-Za-z-0-9\\s]+$' title='A-Z, a-z, 0-9' name='username' value = '" + session.getAttribute("username") + "'/>");
 		pw.println("</td></tr><tr> <td>Message:</td> <td>");
 		pw.println("<textarea class='inputtext' name='message' placeholder='input your message..'></textarea>");
 		pw.println("</td> </tr><td ><input type='submit' value='Enter' class='button'/></td></form>");
@@ -71,11 +71,23 @@ public class ChatServlet extends HttpServlet {
 			if(!textMessage.equals(" ")) {
 				Message message = new Message(username, currentDate, textMessage);
 				Chat.addMessage(message);
+				for(int j = 0; j < 1; j++) {
+					PrintWriter pw1 = response.getWriter();
+					Message newMessage = message;
+					Message newMessage1 = newMessage;
+					if (newMessage != newMessage1) {
+						break;
+					}
+					else {
+						pw1.println("<head>");
+						pw1.println("<meta http-equiv='refresh' content='0'>");
+						pw1.println("</head>");
+					}
+				}
 			}
 			request.removeAttribute("username");
 			request.removeAttribute("message");
 		}
 		doGet(request, response);
 	}
-
 }
