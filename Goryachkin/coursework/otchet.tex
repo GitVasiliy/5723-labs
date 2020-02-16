@@ -1,0 +1,208 @@
+\documentclass[a4paper,14pt]{extarticle} %размер бумаги устанавливаем А4, шрифт 14пунктов 
+\usepackage[T2A]{fontenc} 
+\usepackage[utf8]{inputenc}%включаем свою кодировку: koi8-r или utf8 в UNIX, cp1251 в Windows 
+\usepackage[english,russian]{babel}%используем русский и английский языки с переносами 
+\usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float} %подключаем нужные пакеты расширений 
+\usepackage{graphicx} 
+\graphicspath{{images/}} 
+
+\usepackage[colorlinks=false,pdfborder={0 0 0}]{hyperref} %использование гиперссылок, colorlinks - цвет текста ссылки, pdfborder - окантовка. 
+
+\usepackage{alltt} 
+\usepackage{fancyvrb} 
+%шрифт Times New Roman 
+%\usepackage{fontspec} 
+%\setmainfont{Times New Roman} 
+%\setallmainfonts{Times New Roman} 
+
+\usepackage{titlesec} 
+
+\makeatletter 
+\renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку: 
+\makeatother 
+
+\usepackage{graphicx} 
+\graphicspath{{pictures/}}
+
+\usepackage{geometry} % Меняем поля страницы 
+\geometry{left=3cm}% левое поле 
+\geometry{right=15mm}% правое поле 
+\geometry{top=2cm}% верхнее поле 
+\geometry{bottom=2cm}% нижнее поле 
+\linespread{1.5} 
+
+\usepackage{indentfirst} % отделять первую строку раздела абзацным отступом 
+\setlength\parindent{5ex} 
+\usepackage{tikz} 
+\usepackage{pgfplots} 
+%links 
+\usepackage{url} 
+
+\usepackage[tableposition=top,singlelinecheck=false, justification=centering]{caption} 
+\usepackage{subcaption} 
+
+% маркированные списки 
+\renewcommand{\labelitemi}{--} 
+\renewcommand{\labelitemii}{--} 
+% нумерованные списки 
+\renewcommand{\labelenumi}{\asbuk{enumi})} 
+\renewcommand{\labelenumii}{\arabic{enumii})} 
+
+% номер сноски со скобкой 
+\renewcommand*{\thefootnote}{\arabic{footnote})} 
+\renewcommand{\footnoterule}{% 
+\kern -3pt 
+\hrule width 40mm height .4pt 
+\kern 2.6pt 
+} 
+
+%иллюстрации и таблицы 
+\DeclareCaptionLabelFormat{gostfigure}{Рисунок #2} 
+\DeclareCaptionLabelFormat{gosttable}{Таблица #2} 
+\DeclareCaptionLabelSeparator{gost}{~---~} 
+\captionsetup{labelsep=gost} 
+\captionsetup*[figure]{labelformat=gostfigure} 
+\captionsetup*[table]{labelformat=gosttable} 
+\renewcommand{\thesubfigure}{\asbuk{subfigure}} 
+
+\usepackage{tocloft} 
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} 
+%\renewcommand{\cfttoctitlefont}{\Large\filcenter} 
+%\setcounter{page}{3} %нумерация страниц с 3 
+\addto\captionsrussian{\renewcommand\contentsname{СОДЕРЖАНИЕ}} 
+\addto\captionsrussian{\renewcommand\refname{СПИСОК ИСПОЛЬЗОВАНЫХ ИСТОЧНИКОВ}} 
+
+\usepackage{listings} 
+\lstset{ 
+frame=single, 
+breaklines=true 
+} 
+\author{Д.С. Горячкин} 
+\title{Список дел(to-do list)} 
+\begin{document} 
+\begin{titlepage} 
+\begin{center} 
+
+ГУАП\\ 
+КАФЕДРА № 52\\ 
+\vspace{2cm} 
+
+\begin{flushleft} 
+ПРЕПОДАВАТЕЛЬ 
+\begin{tabular}{|l|l|l|} 
+\hline 
+доц., канд. техн. наук & & Е.М. Линский\\ 
+\hline 
+должность, уч. степень, звание & подпись, дата & инициалы, фамилия\\ 
+\hline 
+\end{tabular} 
+\end{flushleft} 
+
+\vspace{3cm} 
+
+{\Large ОТЧЁТ О КУРСОВОЙ РАБОТЕ\\} 
+\vspace{0.3cm} 
+{\Large Список дел(to-do list)} 
+
+\vspace{0.7cm} 
+
+\begin{flushleft} 
+по курсу: ТЕХНОЛОГИИ ПРОГРАММИРОВАНИЯ 
+\end{flushleft} 
+
+\vspace{5cm} 
+
+\begin{flushleft} 
+РАБОТУ ВЫПОЛНИЛ 
+\begin{tabular}{|l|l|l|} 
+\hline 
+СТУДЕНТ ГР. № 5723 & & Д.С. Горячкин\\ 
+\hline 
+& подпись, дата & инициалы, фамилия\\ 
+\hline 
+\end{tabular} 
+\end{flushleft} 
+
+\vspace{2cm} 
+
+Санкт-Петербург 2020
+
+\end{center} 
+\end{titlepage} 
+\renewcommand{\chaptername}{Раздел} 
+\renewcommand{\figurename}{Рисунок} 
+
+\setcounter{page}{2} 
+\large\bf {{Содержание}}
+\begin{itemize}
+    \item 1. Спецификация к курсовой работе.............................3
+    \item 2. Архитектура проекта.................................................7
+\end{itemize}
+
+\newpage
+\section{Спецификация к курсовой работе} 
+\subsection{Описание}
+\begin{itemize}
+    \item{Cписок дел - это ежедневник в который записываются задачи, которые вам нужно выполнить}
+    \item{Данный список дел будет написан на Java Servlet}
+\end{itemize}
+\subsection{Возможности} 
+\begin{itemize} 
+    \item{Поддерживается регистрация и вход для каждого пользователя}
+    \item{Главная страница:} 
+    \begin{itemize} 
+        \item{Создание списка дел}
+        \item{Редактирование списка}
+        \item{Sign out}
+    \end{itemize} 
+    \item{Профиль:}
+    \begin{itemize}
+        \item{У всех пользователей показывается их список дел}
+    \end{itemize}
+\subsection{Инструкция пользователя}
+    \begin{figure}[H]
+        \centering\includegraphics[width=\linewidth]{qwer.png}
+        \caption{Выбор между регистрацией и входом}
+    \end{figure}
+    \item{Вход и регистрация}
+    \begin{figure}[H]
+        \centering\includegraphics[width=\linewidth]{qwer1.png}
+        \caption{Регистрация}
+    \end{figure}
+
+    \begin{itemize}
+        \item{Незарегестрированный пользователь не сможет войти в систему, ему будет предложено попробывать снова или зарегистрироваться}
+    \end{itemize}
+    \item{Добавление дела в список:} 
+    \begin{figure}[H]
+        \centering\includegraphics[width=\linewidth]{qwer2.png}
+        \caption{Добавление дела}
+    \end{figure}
+    \begin{itemize} 
+        \item{Пользователю будет предложена форма, в которой можно указать дело которое нужно выполнить, оно будет добавлено вниз под формой} 
+    \end{itemize}
+    \item{Удаления дела из списка:}
+    \begin{figure}[H]
+        \centering\includegraphics[width=\linewidth]{qwer3.png}
+        \caption{Удаление дела}
+    \end{figure}
+    \begin{itemize} 
+        \item{Пользователю может удалить дело нажав на крести рядом с ним, либо отметив как выполненое и нажать на кнопку удаления всех выполненых дел} 
+    \end{itemize}
+ \item{Права пользователя:}
+    \begin{itemize}
+        \item{У пользователя есть возможность добавления дела в список, просмотр списка дел,  есть возможность удаления дел из списка, выход из аккаунта}
+    \end{itemize}
+\end{itemize}
+\newpage
+\section{Архитектура проекта}
+Архитектура проекта состоит из одного пакета. Рассмотрим состовляющие пакета:
+    \item {Пакет servlets - содержит сервлеты.}
+    \begin{itemize}
+        \item\bf{public class DeleteServlet extends HttpServlet} - сервлет для редактирования списка 
+        \item\bf{public class SignoutServlet extends HttpServlet} - сервлет для выхода пользователя из аккаунта
+        \item\bf{public class SignupServlet extends HttpServlet} - сервлет для регистрации пользователя 
+        \item\bf{public class SinginServlet extends HttpServlet} - сервлет для входа в аккаунт
+        \item\bf{public class ToDoServlet extends HttpServlet} - сервлет для создания списка
+    \end{itemize}
+\end{document}
